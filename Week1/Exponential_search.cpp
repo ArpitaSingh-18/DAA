@@ -8,7 +8,7 @@ using namespace std;
 bool binary_search(int key, vector<int> vec,int beg,int end){
     if(end>=beg)
     {
-        int mid= beg + (end-beg)/2;
+        int mid = beg + (end-beg)/2;
 
         if(vec[mid]==key)  return true;
         if(vec[mid]<key)   return binary_search(key,vec,mid+1,end);
